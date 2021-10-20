@@ -5,7 +5,8 @@ Devido a modificações na lib/youtube, o aplicativo não funciona mais como esp
 # Dependencias
 
 ```py
-pip3 install prettytable
-pip3 install pytube
-pip3 install eel
+pip install pytube
+pip install eel
+pip install moviepy
+
 ```

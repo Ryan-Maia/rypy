@@ -3,7 +3,6 @@ import eel
 import platform
 import datetime
 from pytube import YouTube
-from prettytable import PrettyTable
 from Converter import *
 
 eel.init('web')
@@ -35,14 +34,7 @@ def youtube(link):
     dados = {}
     formatos = []
 
-    tableInfo = PrettyTable(['ITAG','RES','FPS','MIME_TYPE'])
-    for i in a:
-        tableInfo.add_row([i.itag,i.resolution,i.fps,i.mime_type])
-        formatos.append({"itag":i.itag,"res":i.resolution,"fps":i.fps,"mime_type":i.mime_type})
-
-    tableInfo.add_row([1400,"","--","audio/mp3"])
     formatos.append({"itag":1400,"res":"--","fps":"--","mime_type":"audio/mp3"})
-    print(tableInfo)
 
     dados['formatos'] = formatos
     dados['title'] = yt.title
@@ -108,4 +100,4 @@ def openLocation(location, fileName = ' '):
     os.startfile(path, 'open') """
 
 
-eel.start('index.html')
+eel.start('web/index.html')
