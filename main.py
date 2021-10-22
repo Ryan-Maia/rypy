@@ -87,17 +87,5 @@ def downloadItag(link,itag):
         return [dirPath,fileName]
     else:
         return [dirPath,fileName]
-
-@eel.expose
-def openLocation(location, fileName = ' '):
-    # Atualizar para suportar linux & windows
-    pass
-    """ # print(fileName)
-    if(len(fileName)<=0):
-        path = os.path.realpath(location)
-    else:
-        path = os.path.realpath(location + "\\" + fileName)
-    os.startfile(path, 'open') """
-
-
-eel.start('index.html', mode='custom', cmdline_args=['browser/dist/electron.exe', '.'])
+        
+eel.start('index.html', mode='custom', cmdline_args=['node_modules/electron/dist/electron.exe', '.'])

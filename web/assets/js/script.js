@@ -102,7 +102,7 @@ function downloadCompleted() {
     if(vm.download.downloadedSize == vm.download.remainingSize){
         vm.modalBody = "O arquivo já está baixado!"
     }else{
-        vm.modalBody = "Download Concluído!"
+        vm.modalBody = "Download Concluído! Verifique a pasta Downloads!"
     }
     vm.openModal()
 }
