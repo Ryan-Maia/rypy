@@ -1,3 +1,7 @@
+
+document.getElementById("closeBtn").addEventListener('click',()=>{
+    window.close();
+})
 import CustomModal from './components/CustomModal.js'
 const vm = new Vue({
     el: '#app',

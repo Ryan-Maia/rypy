@@ -13,8 +13,8 @@ eel.say_hello_js('Python World!')   # Call a Javascript function
 
 options = {  
 	'mode': 'custom',
-	'args': ['node_modules/electron/dist/electron.exe', '.']
+	'args': ['node_modules/electron/dist/electron', '.']
 }
 
-eel.start('hello.html', options=options, supress_error=True)
-# eel.start('hello.html', mode='custom', cmdline_args=['node_modules/electron/dist/electron', '.'])
+# eel.start('hello.html', options=options, supress_error=True)
+eel.start('hello.html', mode='custom', cmdline_args=['node_modules/electron/dist/electron.exe', '.'])

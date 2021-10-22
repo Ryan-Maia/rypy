@@ -100,4 +100,4 @@ def openLocation(location, fileName = ' '):
     os.startfile(path, 'open') """
 
 
-eel.start('web/index.html')
+eel.start('index.html', mode='custom', cmdline_args=['browser/dist/electron.exe', '.'])
